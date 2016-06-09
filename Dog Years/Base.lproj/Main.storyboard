@@ -21,13 +21,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Sf0-V0-wzQ">
                                 <rect key="frame" x="0.0" y="0.0" width="610" height="600"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dog Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7M-ud-di4">
+                                <rect key="frame" x="148" y="85" width="315" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How old is your dog in human years?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trd-ai-GFp">
+                                <rect key="frame" x="119" y="195" width="373" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7c-cS-Ha4">
+                                <rect key="frame" x="113" y="254" width="379" height="30"/>
+                                <color key="backgroundColor" red="0.014685053752944932" green="0.55042132840390823" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCq-Ti-8Wu">
+                                <rect key="frame" x="130" y="366" width="345" height="146"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="123"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="trd-ai-GFp" firstAttribute="top" secondItem="h7M-ud-di4" secondAttribute="bottom" constant="25" id="5UA-B9-fal"/>
+                            <constraint firstItem="trd-ai-GFp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="7fE-bM-0V8"/>
                             <constraint firstItem="Sf0-V0-wzQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Daq-6R-J1P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sf0-V0-wzQ" secondAttribute="bottom" id="GPT-sR-N11"/>
+                            <constraint firstItem="FCq-Ti-8Wu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Gvd-jv-ZHz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Sf0-V0-wzQ" secondAttribute="trailing" constant="-30" id="Oce-8c-Ho7"/>
+                            <constraint firstItem="h7M-ud-di4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="R5L-08-ZuN"/>
+                            <constraint firstItem="h7M-ud-di4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="THC-w6-AMD"/>
+                            <constraint firstItem="FCq-Ti-8Wu" firstAttribute="top" secondItem="j7c-cS-Ha4" secondAttribute="bottom" constant="100" id="VjB-FN-M3B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="trd-ai-GFp" secondAttribute="trailing" constant="30" id="eQI-JU-Wnn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j7c-cS-Ha4" secondAttribute="trailing" constant="30" id="fka-Al-ENJ"/>
                             <constraint firstItem="Sf0-V0-wzQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="i9o-3b-ePq"/>
+                            <constraint firstItem="j7c-cS-Ha4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="iSV-c6-OaM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FCq-Ti-8Wu" secondAttribute="trailing" constant="30" id="tW2-aK-zhH"/>
+                            <constraint firstItem="j7c-cS-Ha4" firstAttribute="top" secondItem="trd-ai-GFp" secondAttribute="bottom" constant="15" id="xHi-jh-T44"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h7M-ud-di4" secondAttribute="trailing" constant="117" id="xlc-pl-qkq"/>
                         </constraints>
                     </view>
                 </viewController>
