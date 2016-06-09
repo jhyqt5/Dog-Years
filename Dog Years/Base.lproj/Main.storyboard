@@ -38,6 +38,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="converToDogYears:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8x-A3-A89"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCq-Ti-8Wu">
                                 <rect key="frame" x="130" y="366" width="345" height="146"/>
@@ -66,6 +69,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="h7M-ud-di4" secondAttribute="trailing" constant="117" id="xlc-pl-qkq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dogDogYears" destination="FCq-Ti-8Wu" id="tPi-Eg-eMo"/>
+                        <outlet property="dogHumanYears" destination="trd-ai-GFp" id="VYL-vs-TaF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
